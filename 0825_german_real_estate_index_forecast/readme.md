@@ -1,5 +1,5 @@
 
-## 数据说明
+## Data Explaination
 
 | Header                | Meaning                          | Rationale                           |
 |-----------------------|----------------------------------|-------------------------------------|
@@ -41,7 +41,7 @@
 | TAG_Volatility_Ratio_ | Volatility ratio                 | Abnormal volatility indicator        |
 
 
-## 创新点
+## Innovation
 ### Innovation 1: Dynamic Adaptive Feature Selection Mechanism
 
 Introduce a learnable dynamic feature selector: during the training stage, adopt the Gumbel-Softmax technique to optimize the feature selection strategy end-to-end; dynamic adaptability enables filtering out the most relevant features according to the changing distribution of data across different periods.
@@ -114,3 +114,4 @@ calculate_metrics: calculate a series of metrics on the test set (post-2010), in
  _plot_results: main prediction plot, scatter plot, residual plot, residual distribution histogram.
 
 _analyze_feature_importance: average importance of each feature selected by the dynamic feature selector.
+
