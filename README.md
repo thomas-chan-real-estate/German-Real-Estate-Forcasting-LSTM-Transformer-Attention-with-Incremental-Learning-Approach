@@ -40,7 +40,7 @@
 | TAG_Volatility_Ratio_ | Volatility ratio                 | Abnormal volatility indicator        |
 
 
-## 创新点
+## Innovation
 ### Innovation 1: Dynamic Adaptive Feature Selection Mechanism
 
 Introduce a learnable dynamic feature selector: during the training stage, adopt the Gumbel-Softmax technique to optimize the feature selection strategy end-to-end; dynamic adaptability enables filtering out the most relevant features according to the changing distribution of data across different periods.
