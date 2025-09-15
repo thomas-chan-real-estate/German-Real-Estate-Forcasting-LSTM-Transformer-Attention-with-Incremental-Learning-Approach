@@ -50,7 +50,7 @@ Introduce a learnable dynamic feature selector: during the training stage, adopt
 Construct a deep learning architecture of LSTM-Transformer-Attention and combine it with an incremental learning framework.
 
 ## Algorithm Workflow
-### stage1 Data Preprocessing and Feature Engineering
+### Stage1 Data Preprocessing and Feature Engineering
 
 Data loading and cleaning:
 
@@ -70,7 +70,7 @@ Feature engineering:
 
  - Delete rows that generate missing values after engineering.
 
-### stage2 Data Standardization and Sequence Construction
+### Stage2 Data Standardization and Sequence Construction
 
 Feature/target separation: split the processed DataFrame into a feature matrix X and a target vector y (real estate index).
 
@@ -78,7 +78,7 @@ Data standardization: use RobustScaler for features X. Use StandardScaler for ta
 
 Sequence construction: use the sliding window method to transform data into a supervised learning format. Generate the final model input X_seq and corresponding label y_seq.
 
-### stage3 Training and Prediction Loop
+### Stage3 Training and Prediction Loop
 
 1. Train/test split: take 2010 as the starting year of the test set and find its corresponding index test_start_idx in the sequence data.
 
@@ -106,7 +106,7 @@ Sequence construction: use the sliding window method to transform data into a su
 
  -Record the prediction, ground truth, and current feature importance mask.
 
-### stage4 Results Evaluation and Analysis
+### Stage4 Results Evaluation and Analysis
 
 calculate_metrics: calculate a series of metrics on the test set (post-2010), including MAE, MSE, RMSE, R², MAPE, and directional accuracy.
 
